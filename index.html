@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <title>Warren</title>
 </head>
 <body>
     <h2>Responsive Table</h2>
     <div id="myModal" class="modal">
-        <div class="modal-content">
+        <div id="modal-content" class="modal-content">
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+            <h1 id="modal-title"></h1>
+            <div id="modal-progresso" class="prog">
+                <span class="ball-externa">
+                    <span id="modal-1" data-content="" class="ball"></span>
+                </span>
+                <span id="modal-2" class="reta"></span>
+                <span class="ball-externa">
+                    <span id="modal-3" data-content="" class="ball"></span>
+                </span>
+                <span id="modal-4" class="reta"></span>
+                <span class="ball-externa">
+                    <span id="modal-5" data-content="" class="ball"></span>
+                </span>
+            </div>
+            <div class="separador">
+                <span>Transferência:</span>
+                <span id="modal-valor"></span>
+            </div>
+            <div class="separador">
+                <span>De: </span>
+                <span id="modal-de"></span>
+            </div>
+            <div class="separador">
+                <span>Para: </span>
+                <span id="modal-para"></span>
+            </div>
         </div>
     </div>
     <div class="table-wrapper">
@@ -36,6 +64,5 @@
             </tbody>
         </table>
     </div>
-    
 </body>
 </html>

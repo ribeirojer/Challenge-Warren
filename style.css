@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
 body {
-    font-family: Helvetica;
+    font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     background: #E02B57
 }
@@ -34,12 +36,10 @@ h2 {
     white-space: nowrap;
     background-color: white;
 }
-
 .fl-table td, .fl-table th {
     text-align: center;
     padding: 8px;
 }
-
 .fl-table td {
     border-right: 1px solid #f8f8f8;
     font-size: 12px;
@@ -52,15 +52,14 @@ h2 {
     color: #ffffff;
     background: #324960;
 }
-
 .linhacinza {
     background: #f0f0f0;
 }
 .hover:hover {
     background: #E02B57 #C6C9CE #E09138  #610D2B;
     background-color: #E09138;
-
 }
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -73,31 +72,60 @@ h2 {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffff;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 2rem;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
+    width: 60%; /* Could be more or less, depending on screen size */
+    border-radius: 0.5rem;
+}
+.modal-content h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: unset;
+}
+.separador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+#modal-valor {
+    color: green;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+#modal-de {
+    margin-left: 1rem;
+    background: #FFBEBE;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+#modal-para {
+    margin-left: 1rem;
+    color: #FFBEBE;
+    background: #610D2B;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+/* The Close Button */
+
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+.close:hover, .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 /* Responsive */
 
@@ -163,4 +191,47 @@ h2 {
         display: block;
         text-align: center;
     }
+}
+
+.prog {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.ball-externa {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #FFBEBE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.ball {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+.corDeFundoBranca {
+    background-color: #ffffff;
+}
+.corDeFundoEscura {
+    background-color: #610D2B;
+}
+.ball::after {
+	content: attr(data-content);
+    position: relative;
+    top: 3rem;
+    right: 1rem;
+}
+.reta {
+    width: 3rem;
+    height: 2px;
+    padding: 2px 0;
+    margin: 0 -4px;
+    border-top: 1px solid #FFBEBE;
+    border-bottom: 1px solid #FFBEBE;
+    z-index: 2;
 }
