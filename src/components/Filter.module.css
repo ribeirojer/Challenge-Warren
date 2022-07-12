@@ -1,0 +1,69 @@
+.form {
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    margin-left: 8rem;
+}
+.form__field {
+    padding-top: 1rem;
+    font-family: inherit;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    outline: 0;
+    font-size: 1.3rem;
+    background: transparent;
+    transition: 0.2s;
+}
+.form__field::placeholder {
+    color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 27px;
+    z-index: -1;
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+.form__field:focus {
+    padding-top: 1rem;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #E02B57, #ffffff);
+    border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: linear-gradient(to right, #E02B57, #610D2B);
+    font-weight: 700;
+}
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+/* select status */
+
+.form_select option {
+    color: #E02B57;
+}
+.form_select select {
+    background: transparent;
+    width: 11rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 1rem 1rem 1rem 0;
+    margin: 1rem 0 0 2rem;
+}
+.form_select select::-ms-expand {
+    display: none;
+}

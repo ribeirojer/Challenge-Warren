@@ -1,0 +1,26 @@
+.table_wrapper {
+    margin: 2rem 8rem 0 8rem;
+    box-shadow: 6px 8px 0px black;
+    border-bottom: 1px solid #000;
+}
+.table_header {
+    font-size: 0.9rem;
+    border-collapse: collapse;
+    width: 100%;
+    border-left: 1px solid #000;
+}
+.table_header__line th {
+    color: #ffffff;
+    background: #EC3A6A;
+    text-align: center;
+    padding: 8px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 25%;
+}
+.table_header__line th:nth-child(2) {
+    width: 39%;
+}
+.table_header__line th:nth-child(3) {
+    width: 16%;
+}

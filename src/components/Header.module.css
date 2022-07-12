@@ -1,0 +1,28 @@
+.header {
+    height: 5rem;
+    position: relative;
+    z-index: 2;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__user {
+    display: flex;
+    align-items: center;
+}
+.header__user__name {
+    color: #ffffff;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 0px #610d2b;
+}
+.header__user__photo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1rem 1rem 0 1rem;
+    border: 2px solid #fff;
+}
